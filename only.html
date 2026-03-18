@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Education Navbar</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    .navbar {
+      background: #0a3d62; /* Education Blue */
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f9ca24 !important;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      margin-right: 10px;
+    }
+
+    .nav-link:hover {
+      color: #f9ca24 !important;
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+      border: 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .search-box {
+      max-width: 250px;
+    }
+
+    .btn-enroll {
+      background: #f9ca24;
+      color: #0a3d62;
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn-enroll:hover {
+      background: white;
+      color: #0a3d62;
+    }
+
+    .btn-login {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .btn-login:hover {
+      background: white;
+      color: #0a3d62;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="#">
+      <i class="bi bi-mortarboard-fill"></i> EduLearn
+    </a>
+
+    <!-- MOBILE TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#eduNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- NAVIGATION -->
+    <div class="collapse navbar-collapse" id="eduNavbar">
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <!-- COURSES DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Courses
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Web Development</a></li>
+            <li><a class="dropdown-item" href="#">Data Science</a></li>
+            <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+            <li><a class="dropdown-item" href="#">Business & Management</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Instructors</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <!-- SEARCH -->
+        <li class="nav-item ms-lg-3">
+          <form class="d-flex search-box">
+            <input class="form-control form-control-sm" type="search" placeholder="Search courses">
+          </form>
+        </li>
+
+        <!-- BUTTONS -->
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-login btn-sm px-3" href="#">Login</a>
+        </li>
+
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-enroll btn-sm px-3" href="#">Enroll Now</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

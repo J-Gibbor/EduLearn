@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Analytics Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif; }
+    .card { border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .stat-card h3 { font-size: 2rem; font-weight: 700; }
+    .text-success { color: #28a745 !important; }
+    .text-danger { color: #dc3545 !important; }
+    .streak-calendar .day {
+      width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      background: #e9ecef; margin: 4px;
+    }
+    .streak-calendar .day.active { background: #0d6efd; color: white; font-weight: bold; }
+    .leaderboard img { width: 40px; height: 40px; object-fit: cover; }
+    .combo-chart { height: 300px; background: linear-gradient(to bottom, #f8f9fa, #e9ecef); border-radius: 12px; }
+  </style>
+</head>
+<body class="p-4">
+
+<div class="container-fluid">
+
+  <!-- Top Stats Row -->
+  <div class="row g-4 mb-4">
+    <!-- Avg Quiz Score -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 p-4">
+        <h6 class="text-muted">Avg Quiz Score</h6>
+        <h3 class="mt-2">82% <span class="text-danger fs-5">-10%</span></h3>
+        <div class="progress mt-3" style="height: 8px;">
+          <div class="progress-bar bg-primary" style="width: 82%;"></div>
+        </div>
+        <div class="d-flex justify-content-between mt-3 text-muted small">
+          <span>Highest Score <strong class="text-dark">92.50%</strong></span>
+          <span>Lowest Score <strong class="text-dark">64.28%</strong></span>
+        </div>
+        <div class="progress mt-2" style="height: 6px;">
+          <div class="progress-bar bg-info" style="width: 92.5%;"></div>
+          <div class="progress-bar bg-warning position-absolute" style="width: 64.28%; left: 0;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Time Spent -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 p-4">
+        <h6 class="text-muted">Total Time Spent</h6>
+        <h3 class="mt-2">12 Hours <span class="text-danger fs-5">-12.00%</span></h3>
+        <div class="mt-3">
+          <small class="text-muted">This Week</small>
+          <div class="d-flex align-items-end gap-2 mt-2">
+            <div class="bg-primary rounded" style="width: 40px; height: 120px;"></div>
+            <div class="bg-light rounded" style="width: 40px; height: 40px;"></div>
+            <div class="bg-light rounded" style="width: 40px; height: 40px;"></div>
+            <div class="bg-light rounded" style="width: 40px; height: 40px;"></div>
+            <div class="bg-light rounded" style="width: 40px; height: 40px;"></div>
+          </div>
+          <div class="text-center mt-2"><strong>9.5H</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekly Streak -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 p-4">
+        <h6 class="text-muted">Weekly Streak</h6>
+        <h3 class="mt-2">5 Days</h3>
+        <div class="d-flex justify-content-center flex-wrap streak-calendar mt-3">
+          <div class="day active">01</div>
+          <div class="day active">02</div>
+          <div class="day active">03</div>
+          <div class="day active">04</div>
+          <div class="day active">05</div>
+          <div class="day">06</div>
+          <div class="day">07</div>
+          <div class="day">08</div>
+          <div class="day">09</div>
+          <div class="day">10</div>
+        </div>
+        <hr>
+        <div class="text-center">
+          <small class="text-muted">Longest Streak</small>
+          <h5 class="mt-2">15 days</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Global Ranking -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 p-4">
+        <h6 class="text-muted">Global Ranking</h6>
+        <h3 class="mt-2">#15 <small class="text-muted">of 23K learners</small></h3>
+        <div class="mt-4">
+          <h6>Top local rank</h6>
+          <ol class="list-unstyled mt-3">
+            <li class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" alt="">
+              <div>
+                <strong>Brooklyn Simmons</strong><br>
+                <small class="text-muted">#1</small>
+              </div>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle me-3" alt="">
+              <div>
+                <strong>Annette Black</strong><br>
+                <small class="text-muted">#2</small>
+              </div>
+            </li>
+            <li class="d-flex align-items-center">
+              <img src="https://randomuser.me/api/portraits/men/86.jpg" class="rounded-circle me-3" alt="">
+              <div>
+                <strong>Guy Hawkins</strong><br>
+                <small class="text-muted">#3</small>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Chart Row -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h5>Monthly Course Enrollments & Completion Rates</h5>
+            <h3 class="mt-2">1,250.00 <span class="text-success small">13.4% ↑</span> Avg per month</h3>
+          </div>
+          <div>
+            <button class="btn btn-sm btn-outline-primary me-2">1 Year</button>
+            <button class="btn btn-sm btn-outline-secondary me-2">6 Months</button>
+            <button class="btn btn-sm btn-outline-secondary me-2">3 Months</button>
+            <button class="btn btn-sm btn-outline-secondary">1 Month</button>
+          </div>
+        </div>
+
+          <!-- Placeholder for combo chart (line + bar) -->
+          <div class="combo-chart d-flex align-items-center justify-content-center position-relative">
+            <div class="text-center">
+              <i class="bi bi-bar-chart-line fs-1 text-muted"></i>
+              <p class="mt-3 text-muted">Chart goes here (use Chart.js, ApexCharts, etc.)</p>
+              <p class="small text-muted">
+                <span class="badge bg-primary rounded-pill me-3">Completion Rate (%)</span>
+                <span class="badge bg-orange text-white rounded-pill">Enrollments</span>
+              </p>
+              <p class="mt-3"><strong>July 2024</strong><br>Enrollments: 1,350 <br> Completion: 85.20%</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
