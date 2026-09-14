@@ -42,6 +42,7 @@
 
 .foot{
     border-top: 1px solid white;
+    background: var(--secondary);
 }
 
 .nav-link {
@@ -64,10 +65,10 @@
     background-color: #3b82f6 !important;
     height: 3rem !important;
 }
-.darkened{
+/* .darkened{
     background-color: #3b82f6 !important;
     color: white !important;
-}
+} */
 .dark:hover{
     background-color: #0a3d62 !important;
     color: white !important;
@@ -119,6 +120,8 @@
 #courses h4::after{ content: ''; background: var(--primary); display: block; width: 70px; margin: auto; height: 4px; margin-top: 3px;}
 
 #pricing h4::after{ content: ''; background: var(--primary); display: block; width: 70px; margin: auto; height: 4px; margin-top: 3px;}
+
+#testimonials h5::after{ content: ''; background: var(--primary); display: block; width: 70px; margin: auto; height: 4px; margin-top: 3px;}
 
 #btn-courses{
     background: #f9ca24;

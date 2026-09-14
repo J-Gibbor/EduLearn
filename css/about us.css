@@ -40,6 +40,7 @@
 }
 .foot{
     border-top: 1px solid white;
+    background-color: var(--secondary);
 }
 .nav-link {
     color: white !important;
@@ -131,7 +132,7 @@
     right: 30px;
     /* background: #0a3d62; */
     /* border: 1px solid white; */
-    color: #3b82f6;
+    color: var(--secondary);
     cursor: pointer;
     padding: 2px;
     opacity: 0;
@@ -195,7 +196,7 @@
 .team-img:hover { transform: scale(1.08); }
 
 /* Footer */
-footer{ background: #0a3d62;}
+footer{ background: #0d6efd;}
 footer h4:first-child, footer h6{ color: #f9ca24;}
 .footer-link{ color: hsl(0, 0%, 60%);}
 .footer-link:hover{ color: white;}

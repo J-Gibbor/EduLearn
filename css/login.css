@@ -1,6 +1,14 @@
 /* Default */
 *{ margin: 0; padding: 0; scroll-behavior: smooth;}
 
+/* --- Custom styles --- */
+:root{
+    --primary: #0d6efd;
+    --muted: #6c757d;
+    --card-radius: 14px;
+    --secondary: #0a3d62;
+}
+
 /*Navbar*/
 .navbar {
     background: #0a3d62;
@@ -84,7 +92,7 @@
     right: 30px;
     /* background: #0a3d62; */
     /* border: 1px solid white; */
-    color: #3b82f6;
+    color: var(--secondary);
     cursor: pointer;
     padding: 2px;
     opacity: 0;

@@ -1,5 +1,5 @@
 const toggle = document.getElementById('darkModeToggle');
-const body = document.querySelector('body');
+const body = document.getElementById('general');
 let box = document.getElementById('icon-box');
 let accordion1 = document.getElementById('accordion-buttonOne');
 let accordion2 = document.getElementById('accordion-buttonTwo');
@@ -11,7 +11,7 @@ const nav = document.getElementById('nav');
 const all = document.getElementById('more');
 const on = document.getElementById('on');
 const off = document.getElementById('off');
-const foot = document.getElementById('footer');
+const foot = document.querySelector('footItem');
 const profile = document.getElementById('profileHeader');
 // let text1 = document.getElementById('accordion-body1');
 // let text2 = document.getElementById('accordion-body2');

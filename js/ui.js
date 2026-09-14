@@ -19,7 +19,7 @@ totop.addEventListener('click', function(){
 
 // NOTIFICATIONS
 notify.addEventListener('click', function(){
-    notify.classList.add('bg-white');
+    notify.classList.toggle('bg-white');
     
 })
 

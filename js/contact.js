@@ -5,7 +5,7 @@ const on = document.getElementById('on');
 const off = document.getElementById('off');
 const ball = document.getElementsByClassName('ball');
 const body = document.querySelector('body');
-const foot = document.getElementById('footer');
+const foot = document.getElementById('footItem');
 const submit = document.getElementById('submit');
 
 // Mode selector

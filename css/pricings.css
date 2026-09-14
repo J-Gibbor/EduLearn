@@ -41,6 +41,7 @@
 
 .foot{
     border-top: 1px solid white;
+    background: var(--secondary);
 }
 
 .nav-link {
