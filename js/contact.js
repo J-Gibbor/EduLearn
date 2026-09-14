@@ -14,6 +14,7 @@ toggle.addEventListener('click', function(){
     on.classList.toggle('active');
     submit.classList.toggle('dark');
     nav.classList.toggle('board');
+    nav.classList.toggle('change');
     toggle.classList.toggle('night');
     totop.classList.toggle('sharp');
     foot.classList.toggle('foot');
