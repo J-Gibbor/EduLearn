@@ -7,6 +7,7 @@
     --muted: #6c757d;
     --card-radius: 14px;
     --secondary: #0a3d62;
+    --other: #f9ca24;
 }
 
 /*Navbar*/
@@ -156,7 +157,7 @@
     right: 30px;
     /* background: #0a3d62; */
     /* border: 1px solid white; */
-    color: var(--secondary);
+    color: var(--other);
     cursor: pointer;
     padding: 2px;
     opacity: 0;

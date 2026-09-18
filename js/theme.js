@@ -44,11 +44,6 @@ toggle.addEventListener('click', function(){
     ball.style.cursor='pointer';
     toggle.style.cursor='pointer';
 
-    if(body.classList.contains('change')){
-        return localStorage.setItem('mode','white');
-    }else{
-        return localStorage.return('mode','change');
-    };
     // text1.classList.toggle('bg-dark');
     // text1.classList.toggle('text-light');
     // text2.classList.toggle('bg-dark');
@@ -57,15 +52,3 @@ toggle.addEventListener('click', function(){
     // text3.classList.toggle('text-light');
 
 })
-
-const getkey = localStorage.getItem('mode');
-
-if(getkey === "change"){
-    toggle.classList.add('night');
-    body.classList.add('change');
-    
-}
-else{
-    toggle.classList.remove('night');
-    body.classList.remove('change');
-}
