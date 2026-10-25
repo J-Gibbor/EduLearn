@@ -134,7 +134,7 @@
     right: 30px;
     /* background: #0a3d62; */
     /* border: 1px solid white; */
-    color: var(--other);
+    color: var(--secondary);
     cursor: pointer;
     padding: 2px;
     opacity: 0;
@@ -175,7 +175,7 @@
 }
 
 /* Stats */
-.stats{ background: #0a3d62;}
+.stats{ background: var(--primary);}
 
 /* Our values */
 .icon-box { width: 80px; transition: transform 0.4s; height: 80px; background: #e3f2fd; border-radius: 50%; }

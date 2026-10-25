@@ -164,7 +164,7 @@
     right: 30px;
     /* background: #0a3d62; */
     /* border: 1px solid white; */
-    color: var(--other);
+    color: var(--secondary);
     cursor: pointer;
     padding: 2px;
     opacity: 0;
