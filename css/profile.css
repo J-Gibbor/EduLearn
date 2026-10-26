@@ -110,7 +110,7 @@
     right: 30px;
     /* background: #0a3d62; */
     /* border: 1px solid white; */
-    color: var(--other);
+    color: var(--secondary);
     cursor: pointer;
     padding: 2px;
     opacity: 0;
@@ -170,7 +170,7 @@
 .card { border-radius: 15px; border: none; }
 
 /* Footer */
-footer{ background: #0a3d62;}
-footer h4:first-child, footer h6{ color: #f9ca24;}
+footer{ background: var(--primary);}
+footer h4:first-child, footer h6{ color: var(--other)}
 .footer-link{ color: hsl(0, 0%, 60%);}
 .footer-link:hover{ color: white;}
